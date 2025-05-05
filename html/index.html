@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automatico</title>
+    <link rel="stylesheet" href="/Proyecto_Cajero/CSS/style_cajero.css">
+</head>
+<body>
+    <main class="main_cajero">
+        <div class="atm-container">
+            <h1>
+                <img src="/Proyecto_Cajero/img/cajero.png" alt="Logo Cajero" class="atm-logo"><br>
+                Cajeor automatico
+            </h1>
+            <label for="accountSelect">Selecciona tu cuenta:</label>
+            <select name="accountSelect" id="accountSelect">
+                <option value="">--Seleccionar--</option>
+            </select>
+            <input type="password" id="password" placeholder="Ingresa tu contraseña">
+            <button onclick="login()">Ingresar</button>
+
+            <div id="actions" class="hidden">
+                <button onclick="ConsultarSaldo()">Consultar Saldo</button>
+                <button onclick="IngresarMonto()">Ingresar Monto</button>
+                <button onclick="RetirarMonto()">Retirar Monto</button>
+            </div>
+
+            <div id="output"></div>
+            <p>No tienes cuenta ? <a href="index2.html"> Registrate </a></p>
+
+        </div>
+
+    </main>
+    <script src="/Proyecto_Cajero/JS/Interaccion.js"></script>
+</body>
+</html>

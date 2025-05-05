@@ -1,0 +1,82 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main_rejistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.atm-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Enlace */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para 1080x2340 píxeles */
+@media screen and (device-width: 1080px) and (device-height: 2340px) {
+    body {
+        background-color: #e6f7ff; /* color distinto solo para esta resolución */
+    }
+
+    .atm-container {
+        padding: 40px;
+        border-radius: 16px;
+        max-width: 500px;
+    }
+
+    input, button {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+   <link rel="stylesheet" href="/Proyecto_Cajero/CSS/style_registro.css">
+</head>
+<body>
+    <main class="main_rejistro">
+        <div class="atm-container">
+            <h1>registro de Usuario</h1>
+            <form onsubmit="registrarUsuario(event)">
+                <input type="text" placeholder="Nombre completo " required/>
+                <input type="text" placeholder="CURP" required/>
+                <input type="text" placeholder="REFC" required/>
+                <input type="text" placeholder="Domicilio" required/>
+                <input type="tel" placeholder="Telefono" required/>
+                <input type="password" placeholder="Crear contraseña" required/>
+                <label >Recibos de nomina (PDF):</label>
+                <input type="file" accept="application/pdf" />
+                <button type="submit">Registrar</button>
+            </form>
+                <a href="index.html">Volver al cajero</a>
+        </div>
+    </main>
+    <script src="/Proyecto_Cajero/JS/Interaccion_registro.js"></script>
+</body>
+</html>

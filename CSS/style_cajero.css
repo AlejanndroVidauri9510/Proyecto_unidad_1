@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #87CEEB; /* azul cielo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.main_cajero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.atm-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.atm-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Imagen de cajero */
+.atm-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+/* Inputs y botones */
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+#output {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Media query para resolución 1080x2340 */
+@media screen and (device-width: 1080px) and (device-height: 2340px) {
+  body {
+      font-size: 18px;
+  }
+
+  .atm-container {
+      padding: 3rem;
+      max-width: 500px;
+  }
+
+  input, select, button {
+      font-size: 18px;
+      padding: 14px;
+  }
+
+  .atm-logo {
+      width: 120px;
+  }
+}
